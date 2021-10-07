@@ -19,4 +19,5 @@ Survey weighted multiple and logistic regression in R
 2. The average BMI in the US adult population is 28.73.
 <img width="640" alt="Histogram" src="https://user-images.githubusercontent.com/31772140/136318006-ac1c7a81-41c9-4aa9-8724-d2fa6bedae7b.png">
 
-More coming soon!
+3. The distribution of BMI differ between people who are physically active versus those who are not physically active. We can see this association when we compare BMI with a boxplot and formally test for a difference in mean BMI.
+![Association](https://user-images.githubusercontent.com/31772140/136319115-9a68a44a-e899-4808-91f9-d3c952459705.png)
