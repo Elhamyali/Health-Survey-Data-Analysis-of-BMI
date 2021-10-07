@@ -26,3 +26,6 @@ Survey weighted multiple and logistic regression in R
 
 5. Oddly, people who smoke are less likely to be physically active and have a higher BMI on average. And people who are physically active have a lower BMI on average.
 ![Smoking 2](https://user-images.githubusercontent.com/31772140/136320394-af68be38-72bd-4732-bb4e-ef1f3878eb66.png)
+
+6. People who are physically active tend to have lower BMI no matter their smoking status, and this is true even if they didn't answer the question. Smokers have lower BMI in general. The difference in BMI comparing physically active people to non-physically active people is slightly smaller in smokers than in non-smokers.
+![BMI distribution by smoking and exercise status](https://user-images.githubusercontent.com/31772140/136320591-92b0e832-4304-4caa-809d-d40c3990d2ce.png)
