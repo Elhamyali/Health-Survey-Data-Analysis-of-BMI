@@ -2,9 +2,8 @@
 In this analysis, I analyzed survey data of 20,000 people sampled from the United States to explore health behaviors associated with lower Body Mass Index (BMI), a standardized measure of healthy weight and obesity.
 
 ## Research Questions
-- What is the association between physical activity and BMI among people in the United States?
-- Is BMI lower in physically active people?
-- If someone smokes, is he or she more or less likely to be physically active? Are smokers more likely to have higher or lower BMI?
+- What is the association between physical activity and BMI among people in the United States? Is BMI lower in physically active people?
+- What is the relationship between smoking and physical activity? If someone smokes, is he or she more or less likely to be physically active? Are smokers more likely to have higher or lower BMI?
 
 ## Dataset
 This analysis uses the [National Health and Nutrition Examination Survey](https://www.cdc.gov/nchs/nhanes/index.htm) [(NHANES)](https://www.cdc.gov/nchs/nhanes/index.htm) data from ~20,000 participants surveyed in years 2009-2012 found in the [NHANES R package](https://www.rdocumentation.org/packages/NHANES/versions/2.1.0/topics/NHANES).
