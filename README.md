@@ -20,3 +20,6 @@ Survey weighted multiple and logistic regression in R
 
 3. The distribution of BMI differ between people who are physically active versus those who are not physically active. We can see this association when we compare BMI with a boxplot and formally test for a difference in mean BMI.
 ![Association](https://user-images.githubusercontent.com/31772140/136319115-9a68a44a-e899-4808-91f9-d3c952459705.png)
+
+4. If someone smokes, they are less likely to be physically active.
+![Smoking factor](https://user-images.githubusercontent.com/31772140/136319858-306a1ab8-f499-4cd5-90c8-ab4c34b8ecd4.png)
