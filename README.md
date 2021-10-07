@@ -3,13 +3,13 @@ In this analysis, I analyzed survey data of 20,000 people sampled from the Unite
 
 ## Research Questions
 - What is the association between physical activity and BMI among people in the United States?
-- What is the impact of race on BMI ranges?
+- Is BMI lower in physically active people?
 - Is smoking a confounding factor to BMI ranges?
 
 ## Dataset
 This analysis uses the [National Health and Nutrition Examination Survey](https://www.cdc.gov/nchs/nhanes/index.htm) [(NHANES)](https://www.cdc.gov/nchs/nhanes/index.htm) data from ~20,000 participants surveyed in years 2009-2012 found in the [NHANES R package](https://www.rdocumentation.org/packages/NHANES/versions/2.1.0/topics/NHANES).
 
-## Research Methods
+## Research Method
 Survey weighted multiple and logistic regression in R
 
 ## Insights
