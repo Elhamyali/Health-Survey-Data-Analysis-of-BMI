@@ -25,3 +25,25 @@ nhanes_design <- svydesign(
   weights = ~WTMEC4YR)
 
 summary(nhanes_design)
+
+nhanes_adult <- nhanes_design%>%
+  subset(Age >=20)
+
+summary(nhanes_adult)
+
+nrow(nhanes_design)
+nrow(nhanes_adult)
+
+bmi_mean_raw <- NHANESraw %>% 
+  filter(Age >= 20) %>%
+  summarize(mean(BMI, na.rm = TRUE))
+bmi_mean_raw
+
+bmi_mean <- svymean(~BMI, design = nhanes_adult, na.rm = TRUE)
+bmi_mean
+
+NHANESraw %>% 
+  filter(Age >= 20) %>%
+  ggplot(mapping = aes(x = BMI, weight = WTMEC4YR)) + 
+  geom_histogram()+
+  geom_vline(xintercept = coef(bmi_mean), color="red")
