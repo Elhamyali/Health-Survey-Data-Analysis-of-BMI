@@ -1,5 +1,5 @@
 ## NHANES Health Survey Data Analysis of BMI
-In this analysis, I am analyzing survey data of 20,000 people sampled from the United States to explore health behaviors associated with lower Body Mass Index (BMI), a standardized measure of healthy weight and obesity.
+In this analysis, I analyzed survey data of 20,000 people sampled from the United States to explore health behaviors associated with lower Body Mass Index (BMI), a standardized measure of healthy weight and obesity.
 
 ## Research Questions
 - What is the association between physical activity and BMI among people in the United States?
