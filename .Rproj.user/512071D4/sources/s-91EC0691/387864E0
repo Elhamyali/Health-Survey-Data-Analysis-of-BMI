@@ -3,7 +3,7 @@
     "path": "~/Documents/R Projects/Health Survey Data Analysis of BMI/Health Survey Data Analysis of BMI.R",
     "project_path": "Health Survey Data Analysis of BMI.R",
     "type": "r_source",
-    "hash": "1764183986",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1633483948884.0,
@@ -11,15 +11,15 @@
     "relative_order": 1,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "37,9",
-        "scrollLine": "27"
+        "cursorPosition": "46,40",
+        "scrollLine": "34"
     },
     "folds": "",
-    "lastKnownWriteTime": 1633579135,
+    "lastKnownWriteTime": 1633579870,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1633579135086,
+    "last_content_update": 1633579870906,
     "read_only": false,
     "read_only_alternatives": []
 }

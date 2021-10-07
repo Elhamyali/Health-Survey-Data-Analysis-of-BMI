@@ -44,6 +44,17 @@ bmi_mean
 
 NHANESraw %>% 
   filter(Age >= 20) %>%
-  ggplot(mapping = aes(x = BMI, weight = WTMEC4YR)) + 
+  ggplot(mapping=aes(x=BMI, weight=WTMEC4YR)) + 
   geom_histogram()+
   geom_vline(xintercept = coef(bmi_mean), color="red")
+
+library(broom)
+
+NHANESraw %>% 
+  filter(Age>=20) %>%
+  ggplot(mapping=aes(x=PhysActive, y= BMI, weight=WTMEC4YR))+
+  geom_boxplot()
+
+survey_ttest <- svyttest(BMI~PhysActive, design = nhanes_adult)
+
+tidy(survey_ttest)
