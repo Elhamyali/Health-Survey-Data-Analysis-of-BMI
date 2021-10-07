@@ -13,8 +13,10 @@ This analysis uses the [National Health and Nutrition Examination Survey](https:
 Survey weighted multiple and logistic regression in R
 
 ## Insights
-1. From the below box and whisker plot on the distribution of sampling weights for each race, Whites are undersampled and have higher weights. While Black, Mexican, Hispanic people are oversampled and have lower weights since each sampled person in these minority groups represents fewer US people.
-
+1. Whites are undersampled and have higher weights. While Black, Mexican, Hispanic people are oversampled and have lower weights since each sampled person in these minority groups represents fewer US people.
 <img width="642" alt="Box plot" src="https://user-images.githubusercontent.com/31772140/136316458-c3aa1b5d-94e0-4fb5-8ebb-4454fe8b7905.png">
+
+2. The average BMI in the US adult population is 28.73.
+<img width="640" alt="Histogram" src="https://user-images.githubusercontent.com/31772140/136318006-ac1c7a81-41c9-4aa9-8724-d2fa6bedae7b.png">
 
 More coming soon!
