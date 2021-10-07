@@ -58,3 +58,14 @@ NHANESraw %>%
 survey_ttest <- svyttest(BMI~PhysActive, design = nhanes_adult)
 
 tidy(survey_ttest)
+
+phys_by_smoke <- svyby(~PhysActive, by = ~SmokeNow, 
+                       FUN = svymean, 
+                       design = nhanes_adult, 
+                       keep.names = FALSE)
+
+phys_by_smoke
+
+ggplot(data = phys_by_smoke, aes(SmokeNow, PhysActiveYes, fill = SmokeNow)) +
+  geom_col()+
+  ylab("Proportion Physically Active")
