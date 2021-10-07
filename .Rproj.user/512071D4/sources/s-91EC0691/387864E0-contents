@@ -85,3 +85,23 @@ NHANESraw %>%
   filter(Age>=20) %>%
   ggplot(mapping=aes(x=SmokeNow, y= BMI, weight=WTMEC4YR, color=PhysActive))+
   geom_boxplot()
+
+mod1 <- svyglm(BMI ~ SmokeNow * PhysActive, design = nhanes_adult)
+
+tidy_mod1 <- tidy(mod1)
+tidy_mod1
+
+diff_non_smoke <- tidy_mod1 %>% 
+  filter(term == "PhysActiveYes") %>% 
+  select(estimate)
+diff_non_smoke
+
+diff_smoke <- tidy_mod1 %>% 
+  filter(term %in% c('PhysActiveYes','SmokeNowYes:PhysActiveYes')) %>% 
+  summarize(estimate = sum(estimate))
+diff_smoke
+
+mod2 <- svyglm(BMI ~ PhysActive*SmokeNow + Race1 + Alcohol12PlusYr + Gender, 
+               design = nhanes_adult)
+
+tidy(mod2)
