@@ -23,3 +23,6 @@ Survey weighted multiple and logistic regression in R
 
 4. If someone smokes, they are less likely to be physically active.
 ![Smoking factor](https://user-images.githubusercontent.com/31772140/136319858-306a1ab8-f499-4cd5-90c8-ab4c34b8ecd4.png)
+
+5. Oddly, people who smoke are less likely to be physically active and have a higher BMI on average. And people who are physically active have a lower BMI on average.
+![Smoking 2](https://user-images.githubusercontent.com/31772140/136320394-af68be38-72bd-4732-bb4e-ef1f3878eb66.png)
