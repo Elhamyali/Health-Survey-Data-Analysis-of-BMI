@@ -69,3 +69,19 @@ phys_by_smoke
 ggplot(data = phys_by_smoke, aes(SmokeNow, PhysActiveYes, fill = SmokeNow)) +
   geom_col()+
   ylab("Proportion Physically Active")
+
+BMI_by_smoke <- svyby(~BMI, by = ~SmokeNow, 
+                      FUN = svymean, 
+                      design = nhanes_adult, 
+                      na.rm = TRUE)
+BMI_by_smoke
+
+NHANESraw %>% 
+  filter(Age>=20, !is.na(SmokeNow)) %>% 
+  ggplot(mapping=aes(x=SmokeNow, y= BMI, weight=WTMEC4YR))+
+  geom_boxplot()
+
+NHANESraw %>% 
+  filter(Age>=20) %>%
+  ggplot(mapping=aes(x=SmokeNow, y= BMI, weight=WTMEC4YR, color=PhysActive))+
+  geom_boxplot()
